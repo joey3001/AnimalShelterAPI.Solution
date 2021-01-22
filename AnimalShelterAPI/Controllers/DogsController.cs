@@ -4,7 +4,6 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using AnimalShelterAPI.Models; 
 
-
 namespace AnimalShelterAPI.Controllers 
 {
   [Route("api/[controller]")]
