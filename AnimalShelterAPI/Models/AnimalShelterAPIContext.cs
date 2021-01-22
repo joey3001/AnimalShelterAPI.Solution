@@ -18,8 +18,13 @@ namespace AnimalShelterAPI.Models
       builder.Entity<Dog>()
 
         .HasData(
-            
+          new Dog { DogId = 1, Age = 5, Name = "Ragnar", Breed = "Shiba Inu" },
+          new Dog { DogId = 2, Age = 2, Name = "Gauge", Breed = "Miniature Pincher" },
+          new Dog { DogId = 3, Age = 1, Name = "Ren", Breed = "Doberman" },
+          new Dog { DogId = 4, Age = 10, Name = "Kratos", Breed = "Pit Bull" },
+          new Dog { DogId = 5, Age = 6, Name = "Odin", Breed = "Husky" }
         );
+        
 
       builder.Entity<Cat>()
 
