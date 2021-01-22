@@ -19,6 +19,7 @@ namespace animalshelterclient
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UserUrls("http://localhost:5004/");
     }
 }
