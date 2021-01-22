@@ -30,7 +30,7 @@ namespace AnimalShelterAPI.Models
           new Cat { CatId = 2, Age = 3, Name = "Sprite", Type = "Shiba Inu" },
           new Cat { CatId = 3, Age = 7, Name = "Castle", Type = "Shiba Inu" },
           new Cat { CatId = 4, Age = 5, Name = "Cleo", Type = "Shiba Inu" },
-          new Cat { CatId = 5, Age = 4, Name = "Frank", Type = "Shiba Inu" },
+          new Cat { CatId = 5, Age = 4, Name = "Frank", Type = "Shiba Inu" }
         );
     }
   }
