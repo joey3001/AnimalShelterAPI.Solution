@@ -44,10 +44,20 @@ namespace AnimalShelterAPI.Controllers
 
       return query.ToList();
     }
+
     [HttpGet("{id}")]
     public ActionResult<Cat> Get(int id)
     {
         return _db.Cats.FirstOrDefault(entry => entry.CatId == id);
+    }
+
+    // PUT api/cats/5
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Cat cat)
+    {
+        cat.CatId = id;
+        _db.Entry(cat).State = EntityState.Modified;
+        _db.SaveChanges();
     }
   }
 }

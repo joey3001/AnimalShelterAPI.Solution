@@ -48,5 +48,14 @@ namespace AnimalShelterAPI.Controllers
     {
         return _db.Dogs.FirstOrDefault(entry => entry.DogId == id);
     }
+
+    // PUT api/cats/5
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Dog dog)
+    {
+        dog.DogId = id;
+        _db.Entry(dog).State = EntityState.Modified;
+        _db.SaveChanges();
+    }
   }
 }
