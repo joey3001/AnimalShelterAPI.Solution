@@ -26,11 +26,11 @@ namespace AnimalShelterAPI.Models
     
       builder.Entity<Cat>()
         .HasData(
-          new Cat { CatId = 1, Age = 1, Name = "Delirium", Type = "Shiba Inu" },
-          new Cat { CatId = 2, Age = 3, Name = "Sprite", Type = "Shiba Inu" },
-          new Cat { CatId = 3, Age = 7, Name = "Castle", Type = "Shiba Inu" },
-          new Cat { CatId = 4, Age = 5, Name = "Cleo", Type = "Shiba Inu" },
-          new Cat { CatId = 5, Age = 4, Name = "Frank", Type = "Shiba Inu" }
+          new Cat { CatId = 1, Age = 1, Name = "Delirium", Type = "British Shorthair" },
+          new Cat { CatId = 2, Age = 3, Name = "Sprite", Type = "Bengal Cat" },
+          new Cat { CatId = 3, Age = 7, Name = "Castle", Type = "Siamese" },
+          new Cat { CatId = 4, Age = 5, Name = "Cleo", Type = "Turkish Angora" },
+          new Cat { CatId = 5, Age = 4, Name = "Frank", Type = "Birman" }
         );
     }
   }
