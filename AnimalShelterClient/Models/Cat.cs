@@ -11,5 +11,16 @@ namespace AnimalShelterAPI.Models
     public int Age { get; set; }
     public string Name { get; set; }
     public string Type { get; set; }
+
+    public static List<Cat> GetCats()
+    {
+      var apiCallTask = ApiHelper.GetAll();
+      var result = apiCallTask.Result;
+
+      JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
+      List<Animal> catList = JsonConvert.DeserializeObject<List<Animal>>(jsonResponse.ToString());
+
+      return catList;
+    }
   }
 }
