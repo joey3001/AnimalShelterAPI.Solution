@@ -16,7 +16,6 @@ namespace AnimalShelterAPI.Models
     protected override void OnModelCreating(ModelBuilder builder)
     {
       builder.Entity<Dog>()
-
         .HasData(
           new Dog { DogId = 1, Age = 5, Name = "Ragnar", Breed = "Shiba Inu" },
           new Dog { DogId = 2, Age = 2, Name = "Gauge", Breed = "Miniature Pincher" },
@@ -24,12 +23,14 @@ namespace AnimalShelterAPI.Models
           new Dog { DogId = 4, Age = 10, Name = "Kratos", Breed = "Pit Bull" },
           new Dog { DogId = 5, Age = 6, Name = "Odin", Breed = "Husky" }
         );
-        
-
+    
       builder.Entity<Cat>()
-
         .HasData(
-            
+          new Cat { CatId = 1, Age = 1, Name = "Delirium", Type = "Shiba Inu" },
+          new Cat { CatId = 2, Age = 3, Name = "Sprite", Type = "Shiba Inu" },
+          new Cat { CatId = 3, Age = 7, Name = "Castle", Type = "Shiba Inu" },
+          new Cat { CatId = 4, Age = 5, Name = "Cleo", Type = "Shiba Inu" },
+          new Cat { CatId = 5, Age = 4, Name = "Frank", Type = "Shiba Inu" },
         );
     }
   }
