@@ -44,5 +44,9 @@ namespace AnimalShelterAPI.Controllers
 
       return query.ToList();
     }
+    public ActionResult<Dog> Get(int id)
+    {
+        return _db.Dogs.FirstOrDefault(entry => entry.DogId == id);
+    }
   }
 }
