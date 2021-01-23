@@ -1,0 +1,13 @@
+  
+<h1>Edit Info:</h1>
+<form action="/Dogs/Details/@(Model.DogId)" method="post">
+  <label for="name">Update the Dog's Name</label>
+  <input id="name" name="name" type="text" value="@(Model.Name)">
+  <label for="age">Update the Dog's Age</label>
+  <input id="age" name="age" type="number" value="@(Model.Age)">
+  <label for="breed">Update the Dog's Species</label>
+  <input id="breed" name="breed" type="text" value="@(Model.Breed)">
+  <button type="submit">Go!</button>
+</form>
+
+<a href="/Dogs/Details/@(Model.DogId)"><p>Return to Details</p></a>
