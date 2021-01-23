@@ -24,7 +24,7 @@ namespace AnimalShelterClient.Models
     }
     public static Cat GetDetails(int id)
     {
-      var apiCallTask = ApiHelper.Get(id);
+      var apiCallTask = ApiHelper.GetCat(id);
       var result = apiCallTask.Result;
 
       JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
@@ -33,21 +33,21 @@ namespace AnimalShelterClient.Models
       return cat;
     }
 
-    public static void Post(Cat cat)
+    public static void PostCat(Cat cat)
     {
       string jsonCat = JsonConvert.SerializeObject(cat);
-      var apiCallTask = ApiHelper.Post(jsonCat);
+      var apiCallTask = ApiHelper.PostCat(jsonCat);
     }
 
-    public static void Put(Cat cat)
+    public static void PutCat(Cat cat)
     {
-      string jsonCat = JsonConvert.SerializeObject(Cat);
-      var apiCallTask = ApiHelper.Put(Cat.CatId, jsonCat);
+      string jsonCat = JsonConvert.SerializeObject(cat);
+      var apiCallTask = ApiHelper.PutCat(cat.CatId, jsonCat);
     }
 
-    public static void Delete(int id)
+    public static void DeleteCat(int id)
     {
-      var apiCallTask = ApiHelper.Delete(id);
+      var apiCallTask = ApiHelper.DeleteCat(id);
     }
   }
 }

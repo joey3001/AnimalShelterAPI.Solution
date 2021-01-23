@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace animalshelterclient
+namespace AnimalShelterClient
 {
     public class Program
     {
@@ -19,7 +19,6 @@ namespace animalshelterclient
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UserUrls("http://localhost:5004/");
+                .UseStartup<Startup>();
     }
 }

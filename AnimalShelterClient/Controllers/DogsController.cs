@@ -32,13 +32,13 @@ namespace AnimalShelterClient.Controllers
     public IActionResult Details(int id, Dog dog)
     {
       dog.DogId = id;
-      Dog.Put(dog);
+      Dog.PutDog(dog);
       return RedirectToAction("Details", id);
     }
 
     public IActionResult Delete(int id)
     {
-      Dog.Delete(id);
+      Dog.DeleteDog(id);
       return RedirectToAction("Index");
     }
   }

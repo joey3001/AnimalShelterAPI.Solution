@@ -17,7 +17,7 @@
 <h1>All dogs :</h1>
 
 <ol>
-@foreach (Dog dog in Model)
+@foreach (var dog in Model)
 {
   <ul>
     <li>ID: @dog.DogId</li>
@@ -28,4 +28,5 @@
   <a href="/Dogs/Details/@(dog.DogId)"><p>View Details</p></a>
   <br>
 }
+
 </ol>
