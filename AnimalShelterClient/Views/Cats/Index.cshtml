@@ -19,13 +19,13 @@
 <ol>
 @foreach (Cat cat in Model)
 {
-    <ul>
-        <li>ID: @cat.CatId</li>
-        <li>Name: @cat.Name</li>
-        <li>Type: @cat.type</li>
-        <li>Age: @cat.Age</li>
-    </ul>
-    <a href="/Cats/Details/@(cat.CatId)"><p>View Details</p></a>
-    <br>
+  <ul>
+    <li>ID: @cat.CatId</li>
+    <li>Name: @cat.Name</li>
+    <li>Type: @cat.type</li>
+    <li>Age: @cat.Age</li>
+  </ul>
+  <a href="/Cats/Details/@(cat.CatId)"><p>View Details</p></a>
+  <br>
 }
 </ol>
