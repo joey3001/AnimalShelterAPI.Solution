@@ -13,7 +13,7 @@ namespace AnimalShelterClient.Controllers
     public IActionResult Index()
     {
       var dogs = Dog.GetDogs(); 
-      return view(dogs); 
+      return View(dogs); 
     }
 
     public IActionResult Details(int id)
