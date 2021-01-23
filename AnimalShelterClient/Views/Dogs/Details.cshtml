@@ -3,19 +3,18 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Animal Info:</h1>
+<h1>Dog Info:</h1>
 <ul>
-    <li>ID: @Model.AnimalId</li>
+    <li>ID: @Model.DogId</li>
     <li>Name: @Model.Name</li>
-    <li>Species: @Model.Species</li>
+    <li>Breed: @Model.Breed</li>
     <li>Age: @Model.Age</li>
-    <li>Gender: @Model.Gender</li>
 </ul>
 <br>
 
-<a href="/Animals/Edit/@(Model.AnimalId)"><p>Edit</p></a>
+<a href="/Dogs/Edit/@(Model.DoglId)"><p>Edit</p></a>
 <br>
 
-<a href="/Animals"><p>Return</p></a>
+<a href="/Dogs"><p>Return</p></a>
 
-<a href="/Animals/Delete/@(Model.AnimalId)"><p>DELETE ANIMAL</p></a>
+<a href="/Dogs/Delete/@(Model.DogId)"><p>DELETE ANIMAL</p></a>
