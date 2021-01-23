@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Dogs Page!";
+}
+
+<h1>New Dog:</h1>
+
+<form action="/dogs" method="post">
+  <label for="name">Enter the Dog's Name: </label>
+  <input id="name" name="name" type="text">
+  <label for="age">Enter the Dog's Age</label>
+  <input id="age" name="age" type="number">
+  <label for="breed">Enter the Dog's Breed</label>
+  <input id="breed" name="breed" type="text">
+  <button type="submit">Go!</button>
+</form>
+
+<h1>All dogs :</h1>
+
+<ol>
+@foreach (Dog dog in Model)
+{
+    <ul>
+        <li>ID: @dog.DogId</li>
+        <li>Name: @dog.Name</li>
+        <li>Species: @dog.Species</li>
+        <li>Age: @dog.Age</li>
+        <li>Gender: @dog.Gender</li>
+    </ul>
+    <a href="/Dogs/Details/@(dog.DogId)"><p>View Details</p></a>
+    <br>
+}
+</ol>
