@@ -103,6 +103,10 @@ This application is a custom .NET Web API that stores dogs & cats available for 
 
 2. Navigate to "http://localhost:5000/swagger/v1/swagger.json" to view the raw json documentation. 
 
+#### The API Endpoints are detailed in the image below : 
+
+![SwaggerEndpoints](SwaggerEndpoints.jpg)
+
 #### To view the code in the VSCode editor using commands in the terminal :  
 
 1. Navigate to the project's root directory with the cd command. 
