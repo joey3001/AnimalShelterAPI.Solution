@@ -55,11 +55,11 @@ This application is a custom .NET Web API that stores dogs & cats available for 
               }
             }
 
-\
+  
 
 **Terminal commands listed in the following steps should be executed in the AnimalShelterAPI Directory**
 
-\
+  
 
 2. Use the following command in your terminal program to restore the dependencies and tools of the project : 
 
