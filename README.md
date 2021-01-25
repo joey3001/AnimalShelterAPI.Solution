@@ -55,6 +55,7 @@ This application is a custom .NET Web API that stores dogs & cats available for 
               }
             }
 <br/>
+
 **Terminal commands listed in the following steps should be executed in the AnimalShelterAPI Directory**
 
 <br/>  
