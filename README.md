@@ -81,7 +81,6 @@ This application is a custom .NET Web API that stores dogs & cats available for 
 
 7. Open a new terminal window to execute further commands while running the API. **Do not close the API.**
 
-<br/>
 
 **Terminal commands listed in the following steps should be executed in the AnimalShelterClient directory**
 
