@@ -61,7 +61,7 @@ namespace AnimalShelterClient.Models
     public static async Task PutDog(int id, string newDog)
     {
       RestClient client = new RestClient("http://localhost:5000/api");
-      RestRequest request = new RestRequest($"cats/{id}", Method.PUT);
+      RestRequest request = new RestRequest($"dogs/{id}", Method.PUT);
       request.AddHeader("Content-Type", "application/json");
       request.AddJsonBody(newDog);
       var response = await client.ExecuteTaskAsync(request);

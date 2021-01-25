@@ -16,6 +16,13 @@ namespace AnimalShelterClient.Controllers
       return View(dogs); 
     }
 
+    [HttpPost]
+    public IActionResult Index(Dog dog)
+    {
+      Dog.PostDog(dog);
+      return RedirectToAction("Index");
+    }
+
     public IActionResult Details(int id)
     {
       var dog = Dog.GetDetails(id);
@@ -31,7 +38,7 @@ namespace AnimalShelterClient.Controllers
     [HttpPost]
     public IActionResult Details(int id, Dog dog)
     {
-      dog.DogId = id;
+      dog.DogId = id; 
       Dog.PutDog(dog);
       return RedirectToAction("Details", id);
     }

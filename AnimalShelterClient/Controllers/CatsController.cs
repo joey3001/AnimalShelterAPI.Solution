@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AnimalShelterClient.Models; 
 
@@ -14,6 +9,13 @@ namespace AnimalShelterClient.Controllers
     {
       var cats = Cat.GetCats(); 
       return View(cats); 
+    }
+
+    [HttpPost]
+    public IActionResult Index(Cat cat)
+    {
+      Cat.PostCat(cat);
+      return RedirectToAction("Index");
     }
 
     public IActionResult Details(int id)
