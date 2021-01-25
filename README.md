@@ -55,7 +55,9 @@ This application is a custom .NET Web API that stores dogs & cats available for 
               }
             }
 
-##### Terminal commands listed in the following steps should be executed in the AnimalShelterAPI Directory
+
+**Terminal commands listed in the following steps should be executed in the AnimalShelterAPI Directory**
+
 
 2. Use the following command in your terminal program to restore the dependencies and tools of the project : 
 
@@ -79,7 +81,9 @@ This application is a custom .NET Web API that stores dogs & cats available for 
 
 7. Open a new terminal window to execute further commands while running the API. **Do not close the API.**
 
-##### Terminal commands listed in the following steps should be executed in the AnimalShelterClient directory
+
+**Terminal commands listed in the following steps should be executed in the AnimalShelterClient directory**
+
 
 8. Use the following command in your terminal program to restore the dependencies and tools of the project : 
 
