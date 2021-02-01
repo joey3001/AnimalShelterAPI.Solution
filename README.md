@@ -107,6 +107,10 @@ This application is a custom .NET Web API that stores dogs & cats available for 
 
 ![SwaggerEndpoints](SwaggerEndpoints.JPG)
 
+#### The API Parameters user's can query by are detailed in the image below : 
+
+![SwaggerSchemas](SwaggerSchemas.JPG)
+
 #### To view the code in the VSCode editor using commands in the terminal :  
 
 1. Navigate to the project's root directory with the cd command. 
