@@ -105,7 +105,7 @@ This application is a custom .NET Web API that stores dogs & cats available for 
 
 #### The API Endpoints are detailed in the image below : 
 
-![SwaggerEndpoints](SwaggerEndpoints.JPG)
+![SwaggerEndpoints](SwaggerEndpointsUpdate.JPG)
 
 #### The API Parameters user's can query by are detailed in the image below : 
 
