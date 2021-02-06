@@ -3,9 +3,11 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 homePageHeader">Welcome</h1>
+    <p class="homePageText">Click on either of the links below to view animals stored in our API/SQL Database</p>
 </div>
 
-<p>@Html.ActionLink("Dog Page", "Index", "Dogs")</p>
-<p>@Html.ActionLink("Cat Page", "Index", "Cats")</p>
+<p class='homePageLink'>@Html.ActionLink("View Dogs within the API/SQL Database", "Index", "Dogs")</p>
+<p class='homePageLink'>@Html.ActionLink("View Cats within the API/SQL Database", "Index", "Cats")</p>
+
+<p class='homePageLink'><a href="https://docs.microsoft.com/aspnet/core">Learn about building Web apps with ASP.NET Core</a>.</p>

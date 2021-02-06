@@ -19,19 +19,26 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow backgroundBlue">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow backgroundBlue bottomBorder">
             <div class="container">
                 <a class="fontWhite fontOpenSans fontSize120" asp-area="" asp-controller="Home" asp-action="Index">Animal Shelter API</a>
+                        <img id='pawPrint' src="~/assets/pawPrint.png">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="">
-                        <li class="">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
                             <a class="nav-link fontWhite fontOpenSans" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="">
+                        <li>
+                            <a class="nav-link fontWhite fontOpenSans" asp-area="" asp-controller="Dogs" asp-action="Index">Dogs</a>
+                        </li>
+                        <li>
+                            <a class="nav-link fontWhite fontOpenSans" asp-area="" asp-controller="Cats" asp-action="Index">Cats</a>
+                        </li>
+                        <li>
                             <a class="nav-link fontWhite fontOpenSans" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -48,7 +55,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - animalshelterclient - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - Animal Shelter API - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 
