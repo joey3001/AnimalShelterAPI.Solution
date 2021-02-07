@@ -2,17 +2,22 @@
     ViewData["Title"] = "Dogs Page!";
 }
 
-<h1>New Dog:</h1>
 
-<form action="/dogs" method="post">
-  <label for="name">Enter the Dog's Name: </label>
-  <input id="name" name="name" type="text">
-  <label for="age">Enter the Dog's Age</label>
-  <input id="age" name="age" type="number">
-  <label for="breed">Enter the Dog's Breed</label>
-  <input id="breed" name="breed" type="text">
-  <button type="submit">Go!</button>
-</form>
+
+<p class="newDogHeader">Add a new Dog</h1>
+<div class='bottomBorderAsset'></div>
+<div class='capsule'>
+  <form action="/dogs" method="post">
+    <label for="name" class='center'>Enter the Dog's Name </label>
+    <input id="name" class='form-control' name="name" type="text">
+    <label for="age" class='center'>Enter the Dog's Age</label>
+    <input id="age" class='form-control' name="age" type="number">
+    <label for="breed" class='center'>Enter the Dog's Breed</label>
+    <input id="breed" class='form-control' name="breed" type="text">
+    <button type="submit" class='dogBtn'>Submit</button>
+  </form>
+</div>
+<div class='bottomBorderAsset'></div> 
 
 <h1>All dogs :</h1>
 
