@@ -2,18 +2,29 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Cat Info:</h1>
-<ul>
-  <li>ID: @Model.CatId</li>
-  <li>Name: @Model.Name</li>
-  <li>Type: @Model.Type</li>
-  <li>Age: @Model.Age</li>
-</ul>
-<br>
-
-<a href="/Cats/Edit/@(Model.CatId)"><p>Edit</p></a>
-<br>
-
-<a href="/Cats"><p>Return</p></a>
-
-<a href="/Cats/Delete/@(Model.CatId)"><p>DELETE ANIMAL</p></a>
+<div class='detailsCard'>
+  <p class='bold detailsMargins'>Cat Info:</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>@Model.CatId</td>
+        <td>@Model.Name</td>
+        <td>@Model.Type</td>
+        <td>@Model.Age</td>
+      </tr>
+    </tbody>
+  </table> 
+  <a class='detailsLink' href="/Cats/Edit/@(Model.CatId)">Edit Cat</a>
+  <a class='spacer'>•</a>
+  <a class='detailsLink' href="/Cats">Return to Cats Page</a>
+  <a class=spacer>•</a>
+  <a class='detailsLink' href="/Cats/Delete/@(Model.CatId)">Delete Cat</a>
+</div> 

@@ -4,7 +4,7 @@
 
 
 
-<p class="newDogHeader">Add a new Dog</h1>
+<p class="newHeader">Add a new Dog</p>
 <div class='bottomBorderAsset'></div>
 <div class='capsule'>
   <form action="/dogs" method="post">
@@ -14,24 +14,35 @@
     <input id="age" class='form-control' name="age" type="number">
     <label for="breed" class='center'>Enter the Dog's Breed</label>
     <input id="breed" class='form-control' name="breed" type="text">
-    <button type="submit" class='dogBtn'>Submit</button>
+    <button type="submit" class='indexBtn'>Submit</button>
   </form>
 </div>
-<div class='bottomBorderAsset'></div> 
 
-<h1>All dogs :</h1>
+<div class='customCard'>
+    <p class="tableHeader">All dogs in the database</p>
+    <p class="pageText">Click on a dog to pull up it's individual page</p>
 
-<ol>
-@foreach (var dog in Model)
-{
-  <ul>
-    <li>ID: @dog.DogId</li>
-    <li>Name: @dog.Name</li>
-    <li>Breed: @dog.Breed</li>
-    <li>Age: @dog.Age</li>
-  </ul>
-  <a href="/Dogs/Details/@(dog.DogId)"><p>View Details</p></a>
-  <br>
-}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Breed</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+      @foreach (var dog in Model)
+      {
+          <tr>
+            <td><a href="/Dogs/Details/@(dog.DogId)">@dog.DogId</a></td>
+            <td><a href="/Dogs/Details/@(dog.DogId)">@dog.Name</a></td>
+            <td><a href="/Dogs/Details/@(dog.DogId)">@dog.Breed</a></td>
+            <td><a href="/Dogs/Details/@(dog.DogId)">@dog.Age</a></td>
+          </tr>
+      }
+      </tbody>
+    </table>
+</div>
 
 </ol>

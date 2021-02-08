@@ -2,30 +2,45 @@
     ViewData["Title"] = "Cats Page!";
 }
 
-<h1>New Cat:</h1>
 
-<form action="/cats" method="post">
-  <label for="name">Enter the Cat's Name: </label>
-  <input id="name" name="name" type="text">
-  <label for="age">Enter the Cat's Age</label>
-  <input id="age" name="age" type="number">
-  <label for="type">Enter the Cat's Breed</label>
-  <input id="type" name="type" type="text">
-  <button type="submit">Go!</button>
-</form>
 
-<h1>All cats :</h1>
+<p class="newHeader">Add a new Cat</p>
+<div class='bottomBorderAsset'></div>
+<div class='capsule'>
+  <form action="/cats" method="post">
+    <label for="name" class='center'>Enter the Cat's Name </label>
+    <input id="name" class='form-control' name="name" type="text">
+    <label for="age" class='center'>Enter the Cat's Age</label>
+    <input id="age" class='form-control' name="age" type="number">
+    <label for="breed" class='center'>Enter the Cat's Breed</label>
+    <input id="breed" class='form-control' name="breed" type="text">
+    <button type="submit" class='indexBtn'>Submit</button>
+  </form>
+</div>
 
-<ol>
-@foreach (var cat in Model)
-{
-  <ul>
-    <li>ID: @cat.CatId</li>
-    <li>Name: @cat.Name</li>
-    <li>Type: @cat.Type</li>
-    <li>Age: @cat.Age</li>
-  </ul>
-  <a href="/Cats/Details/@(cat.CatId)"><p>View Details</p></a>
-  <br>
-}
-</ol>
+<div class='customCard'>
+  <p class='tableHeader'>All cats in the database</p>
+  <p class="pageText">Click on a cat to pull up it's individual page</p>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+    @foreach (var cat in Model)
+    {
+        <tr>
+          <td><a href="/Cats/Details/@(cat.CatId)">@cat.CatId</a></td>
+          <td><a href="/Cats/Details/@(cat.CatId)">@cat.Name</a></td>
+          <td><a href="/Cats/Details/@(cat.CatId)">@cat.Type</a></td>
+          <td><a href="/Cats/Details/@(cat.CatId)">@cat.Age</a></td>
+        </tr>
+    }
+    </tbody>
+  </table>
+</div> 

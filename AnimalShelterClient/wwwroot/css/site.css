@@ -72,7 +72,7 @@ body {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgb(253, 253, 253)
 }
 
 li {
@@ -103,7 +103,7 @@ img {
 }
 
 .homePageHeader {
-  margin-top: 2%; 
+  margin-top: 7%; 
 }
 
 .homePageLink {
@@ -114,16 +114,17 @@ a {
   color: rgb(44, 86, 214)
 }
 
-.newDogHeader {
-  margin-top: 5%; 
-  font-weight: bold; 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.newHeader {
+  padding-top: 6%; 
+  font-weight: 300; 
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center; 
+  font-size: 120%; 
 }
 
 .center {
   text-align: left; 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: block; 
   margin: auto; 
   padding-top: 10px; 
@@ -138,13 +139,13 @@ a {
   margin-bottom: 20px; 
 }
 
-.dogBtn { 
+.indexBtn { 
   padding: 10px 20px; 
   margin: auto;
   display: block;
   margin-top: 4.5%; 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-  font-weight: bold;
+  font-weight: 300;
   background-color: #f2c025;
   color: rgb(255, 255, 255);
   border-radius: 10px; 
@@ -153,7 +154,7 @@ a {
   margin-bottom: 29px; 
 }
 
-.dogBtn:hover {
+.indexBtn:hover {
   color: black;
   transition: 0.5s;
 }
@@ -166,4 +167,64 @@ a {
   border-bottom: 1px solid rgb(212, 174, 174);
 }
 
+.tableHeader { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 110%; 
+  font-weight: 300; 
+  line-height: 1; 
+}
 
+.pageText { 
+  font-family: Arial, Helvetica, sans-serif; 
+  line-height: 0; 
+  margin-bottom: 26px; 
+}
+
+.animalContainer {
+  width: 65%;
+  display: block; 
+  margin: auto; 
+}
+
+.customCard{
+  background-color: white; 
+  border: 1px solid lightgrey; 
+  border-radius: 4px; 
+  margin: auto; 
+  width: 55%; 
+  padding: 1.8%; 
+  padding-top: 1%; 
+  padding-bottom: 0; 
+  margin-bottom: 20px;  
+}
+
+.detailsCard {
+  background-color: white; 
+  border: 1px solid lightgrey; 
+  border-radius: 4px; 
+  margin: auto; 
+  width: 45%; 
+  margin-top: 130px; 
+  padding: 1.5%; 
+}
+
+.bold {
+  font-weight: 300; 
+}
+
+.detailsMargins { 
+  margin-top: 2%; 
+}
+
+.detailsLink {
+  display: inline; 
+}
+
+.spacer {
+  margin-left: 5px; 
+  margin-right: 5px; 
+}
+
+.centerText {
+  text-align: center; 
+}

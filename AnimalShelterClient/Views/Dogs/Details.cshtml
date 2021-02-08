@@ -2,18 +2,29 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Dog Info:</h1>
-<ul>
-  <li>ID: @Model.DogId</li>
-  <li>Name: @Model.Name</li>
-  <li>Breed: @Model.Breed</li>
-  <li>Age: @Model.Age</li>
-</ul>
-<br>
-
-<a href="/Dogs/Edit/@(Model.DogId)"><p>Edit</p></a>
-<br>
-
-<a href="/Dogs"><p>Return</p></a>
-
-<a href="/Dogs/Delete/@(Model.DogId)"><p>DELETE ANIMAL</p></a>
+<div class='detailsCard'>
+  <p class='bold detailsMargins'>Dog Info:</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>@Model.DogId</td>
+        <td>@Model.Name</td>
+        <td>@Model.Breed</td>
+        <td>@Model.Age</td>
+      </tr>
+    </tbody>
+  </table> 
+  <a class='detailsLink' href="/Dogs/Edit/@(Model.DogId)">Edit Dog</a>
+  <a class='spacer'>•</a>
+  <a class='detailsLink' href="/Dogs">Return to Dogs Page</a>
+  <a class=spacer>•</a>
+  <a class='detailsLink' href="/Dogs/Delete/@(Model.DogId)">Delete Dog</a>
+</div> 
