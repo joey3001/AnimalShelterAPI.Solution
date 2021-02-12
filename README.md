@@ -1,8 +1,6 @@
 # Joe's Animal Shelter - .NET Web API & MVC
 #### 1/22/2021
 
-#### 1/18/2021
-
 ### 📖 Description
 
 This application is a custom .NET Web API that stores dogs & cats available for adoption at an animal shelter. The app also utilizes the Entity framework to setup and manipulate an SQL database. User's can create, edit, and delete database entries through the .NET MVC client side of the project. Swagger was used to auto-generate documentation on the API. You can also interact with the API using the swagger UI interface. 
